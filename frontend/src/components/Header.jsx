@@ -14,7 +14,7 @@ const Header = ({ title }) => {
   {token && (
     <>
       <p className="subtitle">
-        {title || "Welcome to the DialgoGPT-large chatbot, create a new message to talk to the chatbot"}
+        {title || "Welcome to the DialgoGPT chatbot, create a new message to talk to the chatbot"}
       </p>
       <button
         className="button"
