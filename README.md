@@ -1,7 +1,8 @@
 ## Chatbot fullstack application
 
 ### Overview
-This repository contains a fullstack Python application for a chatbot that uses FastAPI, React, MySQL and the pretrained DialgoGPT model from AutoModelForCasuallLM.
+This repository contains a fullstack application for a chatbot that uses FastAPI, React, MySQL and the pretrained DialgoGPT model from AutoModelForCasuallLM. 
+The programming languages used are Python and JavaScript.
 
 
 ### Purpose
