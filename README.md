@@ -16,7 +16,10 @@ The primary objective of this application is to exercise the fullstack creation 
 3. **MySQL**: Using MySQL database to store users and chatbot messages/responses.
 
 ### Applications
-The usage of this app is for user registration and login as well as the core functionality for basic questions or messages since the chat model used isnt very good.
+The usage of this app is for user registration and login as well as the core functionality for basic questions or messages since the chat model used isnt very good. 
+
+### Improvements
+Further improvements could be to make the application deployable using docker and run it on microsoft azure or heruko, tests suuch as unit tests could also be added to ensure functionality works as intended.
 
 
 ### Acknowledgments
