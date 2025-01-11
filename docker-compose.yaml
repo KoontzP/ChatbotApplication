@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+
+  frontend:
+    container_name: "frontend"
+    build:
+      context: .
+      dockerfile: dockerfile_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+
+
+  backend:
+    container_name: "backend"
+    build:
+      context: .
+      dockerfile: dockerfile_backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    restart: always
+    networks:
+      - app-network
+
+  db:
+    container_name: "db"
+    image: mysql:latest
+    hostname: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Root123!!
+      MYSQL_DATABASE: chatbotapp
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+    ports:
+      - "3307:3306"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

@@ -30,6 +30,7 @@ const Table = () => {
     }
   };
 
+
   const handleDelete = async (id) => {
     const requestOptions = {
       method: "DELETE",

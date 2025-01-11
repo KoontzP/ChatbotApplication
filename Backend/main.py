@@ -16,7 +16,7 @@ db.Base.metadata.create_all(bind=db.engine)
 
 
 # Endpoint to create a new user
-@app.post("/api/users/")
+@app.post("/api/users")
 async def create_user(user: schem.UserCreate, db: orm.session = fapi.Depends(sett.get_db)):
     db_user = await sett.get_user_by_email(user.email, db)
     if db_user:
